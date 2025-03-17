@@ -1,3 +1,3 @@
 package com.laioffer.twitch.favorite;
 
-public class DuplicateFavoriteException extends Exception {}
+public class DuplicateFavoriteException extends RuntimeException {}
