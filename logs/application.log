@@ -1,0 +1,829 @@
+2025-02-21T10:20:05.279+08:00  INFO 3345 --- [main] com.laioffer.twitch.TwitchApplication    : Starting TwitchApplication using Java 17.0.14 with PID 3345 (/Users/ziyuelong/Desktop/Project/Java/twitch/build/classes/java/main started by ziyuelong in /Users/ziyuelong/Desktop/Project/Java/twitch)
+2025-02-21T10:20:05.293+08:00  INFO 3345 --- [main] com.laioffer.twitch.TwitchApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T10:20:06.549+08:00  INFO 3345 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-02-21T10:20:06.560+08:00  INFO 3345 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-21T10:20:06.561+08:00  INFO 3345 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2025-02-21T10:20:06.672+08:00  INFO 3345 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-21T10:20:06.673+08:00  INFO 3345 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1243 ms
+2025-02-21T10:20:07.223+08:00  INFO 3345 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-21T10:20:07.238+08:00  INFO 3345 --- [main] com.laioffer.twitch.TwitchApplication    : Started TwitchApplication in 2.76 seconds (process running for 8.83)
+2025-02-21T10:20:17.826+08:00 DEBUG 3345 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:20:17.826+08:00 DEBUG 3345 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:20:17.832+08:00 DEBUG 3345 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:20:17.858+08:00  INFO 3345 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-21T10:20:17.859+08:00  INFO 3345 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-21T10:20:17.862+08:00  INFO 3345 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-21T10:20:18.199+08:00 DEBUG 3345 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:20:18.200+08:00 DEBUG 3345 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:20:18.274+08:00 DEBUG 3345 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:20:18.275+08:00 DEBUG 3345 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/hello
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:20:18.317+08:00 DEBUG 3345 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [663]
+2025-02-21T10:20:18.318+08:00 DEBUG 3345 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:20:22.829+08:00 DEBUG 3345 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [663]
+2025-02-21T10:22:32.405+08:00 DEBUG 3345 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [663]
+2025-02-21T10:22:32.411+08:00 DEBUG 3345 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:22:32.502+08:00 DEBUG 3345 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:22:32.503+08:00 DEBUG 3345 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:22:32.853+08:00 DEBUG 3345 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:22:32.853+08:00 DEBUG 3345 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:22:55.503+08:00  INFO 3362 --- [main] com.laioffer.twitch.TwitchApplication    : Starting TwitchApplication using Java 17.0.14 with PID 3362 (/Users/ziyuelong/Desktop/Project/Java/twitch/build/classes/java/main started by ziyuelong in /Users/ziyuelong/Desktop/Project/Java/twitch)
+2025-02-21T10:22:55.507+08:00  INFO 3362 --- [main] com.laioffer.twitch.TwitchApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T10:22:56.649+08:00  INFO 3362 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-02-21T10:22:56.659+08:00  INFO 3362 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-21T10:22:56.659+08:00  INFO 3362 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2025-02-21T10:22:56.755+08:00  INFO 3362 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-21T10:22:56.755+08:00  INFO 3362 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1158 ms
+2025-02-21T10:22:57.295+08:00  INFO 3362 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-21T10:22:57.310+08:00  INFO 3362 --- [main] com.laioffer.twitch.TwitchApplication    : Started TwitchApplication in 2.559 seconds (process running for 8.502)
+2025-02-21T10:23:00.288+08:00 DEBUG 3362 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:23:00.290+08:00 DEBUG 3362 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:23:00.311+08:00  INFO 3362 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-21T10:23:00.311+08:00  INFO 3362 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-21T10:23:00.312+08:00  INFO 3362 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-21T10:23:00.617+08:00 DEBUG 3362 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:23:00.618+08:00 DEBUG 3362 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:23:02.858+08:00 DEBUG 3362 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:23:02.858+08:00 DEBUG 3362 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:27:17.183+08:00  INFO 3380 --- [main] com.laioffer.twitch.TwitchApplication    : Starting TwitchApplication using Java 17.0.14 with PID 3380 (/Users/ziyuelong/Desktop/Project/Java/twitch/build/classes/java/main started by ziyuelong in /Users/ziyuelong/Desktop/Project/Java/twitch)
+2025-02-21T10:27:17.188+08:00  INFO 3380 --- [main] com.laioffer.twitch.TwitchApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T10:27:18.306+08:00  INFO 3380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-02-21T10:27:18.317+08:00  INFO 3380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-21T10:27:18.317+08:00  INFO 3380 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2025-02-21T10:27:18.419+08:00  INFO 3380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-21T10:27:18.419+08:00  INFO 3380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1137 ms
+2025-02-21T10:27:18.948+08:00  INFO 3380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-21T10:27:18.964+08:00  INFO 3380 --- [main] com.laioffer.twitch.TwitchApplication    : Started TwitchApplication in 2.538 seconds (process running for 8.462)
+2025-02-21T10:27:33.105+08:00 DEBUG 3380 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:27:33.110+08:00 DEBUG 3380 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:27:33.144+08:00  INFO 3380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-21T10:27:33.144+08:00  INFO 3380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-21T10:27:33.147+08:00  INFO 3380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-21T10:27:33.597+08:00 DEBUG 3380 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T10:27:33.598+08:00 DEBUG 3380 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:27:37.916+08:00 DEBUG 3380 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T10:27:37.917+08:00 DEBUG 3380 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:27:48.382+08:00 DEBUG 3380 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T10:27:48.385+08:00 DEBUG 3380 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=it HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:27:48.440+08:00 DEBUG 3380 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T10:27:48.441+08:00 DEBUG 3380 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:27:52.920+08:00 DEBUG 3380 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T10:27:52.920+08:00 DEBUG 3380 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:31:43.906+08:00  INFO 3422 --- [main] com.laioffer.twitch.TwitchApplication    : Starting TwitchApplication using Java 17.0.14 with PID 3422 (/Users/ziyuelong/Desktop/Project/Java/twitch/build/classes/java/main started by ziyuelong in /Users/ziyuelong/Desktop/Project/Java/twitch)
+2025-02-21T10:31:43.910+08:00  INFO 3422 --- [main] com.laioffer.twitch.TwitchApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T10:31:45.085+08:00  INFO 3422 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-02-21T10:31:45.096+08:00  INFO 3422 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-21T10:31:45.096+08:00  INFO 3422 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2025-02-21T10:31:45.195+08:00  INFO 3422 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-21T10:31:45.195+08:00  INFO 3422 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1163 ms
+2025-02-21T10:31:45.739+08:00  INFO 3422 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-21T10:31:45.754+08:00  INFO 3422 --- [main] com.laioffer.twitch.TwitchApplication    : Started TwitchApplication in 2.613 seconds (process running for 8.762)
+2025-02-21T10:31:48.771+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:31:48.774+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:31:48.800+08:00  INFO 3422 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-21T10:31:48.801+08:00  INFO 3422 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-21T10:31:48.802+08:00  INFO 3422 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-21T10:31:49.190+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T10:31:49.192+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:31:50.553+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T10:31:50.555+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=it HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:31:50.610+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T10:31:50.612+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:31:52.973+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:31:52.973+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T10:31:53.268+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T10:31:53.271+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T10:31:53.962+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:31:53.964+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:31:57.970+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:31:57.970+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:32:04.629+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T10:32:04.629+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:32:04.632+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 9e1cb1ac-5035-474f-9fc0-436af04ec008
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 30
+
+{
+    "name" : "course1Max!"
+}]
+2025-02-21T10:32:04.669+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:04.670+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:07.059+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:07.061+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 5c171c9e-9c74-4a50-a893-fa2aeb3977b8
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 30
+
+{
+    "name" : "course1Max!"
+}]
+2025-02-21T10:32:07.108+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:07.109+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:08.091+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:08.098+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: e905cc10-f056-44ab-9dd7-2ccaeef9538e
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 30
+
+{
+    "name" : "course1Max!"
+}]
+2025-02-21T10:32:08.132+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:08.132+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:08.907+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:08.909+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: fef52c03-d11f-4338-88d6-c6f3867ab15b
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 30
+
+{
+    "name" : "course1Max!"
+}]
+2025-02-21T10:32:08.933+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:08.934+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:14.702+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:32:14.705+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 397202e0-7bbc-47de-a32c-f325105b86db
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:14.736+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:32:14.737+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:20.915+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:32:20.916+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-HK HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 2672489b-98db-4b69-a2cf-a04d6e85240e
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:21.001+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:32:21.001+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:26.894+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:32:26.895+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-HK HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 44bb3ece-71cf-4b7a-aacc-e61d092f8bdb
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:26.953+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:32:26.953+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:29.974+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:32:29.975+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-123 HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 395582cc-104b-4669-a36e-89d18001b2d4
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:30.033+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:30.034+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:31.230+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:31.231+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-123 HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 5b503121-8849-49cd-af2d-60f6f2833828
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:31.300+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:31.300+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:32.542+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:32.543+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-123 HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 6a2d40ed-7c89-49fa-abec-64afe38243e4
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:32.601+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:32.601+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:36.917+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:36.918+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=US HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 7f3aa908-3586-45ba-8dd3-4775826f6f7d
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:36.969+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:32:36.970+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:40.693+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:32:40.695+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=CA HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 3917197a-f0a7-4daa-a945-b0dd329f82f6
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:40.802+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:32:40.806+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:42.420+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:32:42.421+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=CA HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 136d6614-d666-4ec6-839a-6d336e4bb7b2
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:42.466+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:32:42.467+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:48.514+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:32:48.516+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=canada HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: f70c0544-fc3c-4e70-8e74-50c4e026aeec
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:48.572+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:48.572+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:50.194+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:50.196+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=canada HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 844323c9-324c-41e1-a640-6b754121fb48
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:50.278+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:50.279+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:32:51.141+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:51.142+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=canada HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 5d3d7373-35a8-4d0e-bdc7-8a33d530d8ff
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:32:51.199+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:32:51.200+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:34:24.899+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T10:34:24.899+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:34:24.905+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=en-CA HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: b71133d1-a395-4985-ac8c-10e3d5343cfd
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:34:24.977+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:34:24.978+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:34:26.572+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:34:26.573+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=en-CA HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 3ee45993-45fe-47e6-a59b-a88988afa3a1
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:34:26.737+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:34:26.744+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:34:34.413+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:34:34.416+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-HK HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: c31ef7cf-c3d9-49be-99b9-a73c9efb19ef
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:34:34.472+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:34:34.473+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:38:51.486+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:38:51.486+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:38:51.489+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=en-HK HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: e54e5dc5-63e4-4725-bdd5-2c46c2ce0c34
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:38:51.577+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:38:51.578+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:39:06.725+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:39:06.729+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=en-HK HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: bb79857f-4426-475b-945b-ee8bd7ce777f
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:39:06.785+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:39:06.786+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:39:09.275+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:39:09.276+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=en-HK HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: b50ba645-b80f-4bb6-95d0-b63fc9286d4b
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:39:09.341+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:39:09.342+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:40:29.770+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [220]
+2025-02-21T10:40:29.770+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:40:29.784+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=uk HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 15439ef0-c542-4328-b3ca-5e5ca7869558
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:40:29.886+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:40:29.887+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:40:35.619+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:40:35.622+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=en-CA HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 692d61ae-ba60-4291-b4b6-d22713f89d9e
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:40:35.682+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:40:35.684+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:40:36.924+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:40:36.929+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=en-CA HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 09607eef-e57a-4a7e-b9bb-905530250e62
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:40:36.989+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:40:36.993+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:40:45.744+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:40:45.749+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=ja HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: eb66fa57-436c-4dc1-b76f-88e723f20013
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:40:45.794+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:40:45.795+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:05.076+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [216]
+2025-02-21T10:41:05.078+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 341395a5-ca28-47f6-a932-cd0cb6ddd5dc
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:05.121+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:05.131+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:06.799+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:06.800+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 82909045-3d9c-4975-a458-b10838af8615
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:06.831+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:06.831+08:00 DEBUG 3422 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:14.075+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:14.076+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 9e256156-f300-46bf-8678-64d826dc880b
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:14.114+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:14.114+08:00 DEBUG 3422 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:17.109+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:17.110+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 3940bc79-8137-4e3f-a75a-e2192dcedc46
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:17.145+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:17.145+08:00 DEBUG 3422 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:18.506+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:18.507+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: be51ca8c-daf4-43e7-bff0-ce937290ea76
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:18.615+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:18.620+08:00 DEBUG 3422 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:19.458+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:19.459+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: d514aeb3-16cd-46e3-a9a9-05651c8a44c8
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:19.488+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:19.488+08:00 DEBUG 3422 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:20.459+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:20.460+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: aec52286-631a-4c04-b861-c9d97b7d8234
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:20.491+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:20.491+08:00 DEBUG 3422 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:21.673+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:21.673+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-TW HTTP/1.1
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 5ab25015-ac89-4985-b14e-f7deff029190
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+]
+2025-02-21T10:41:21.701+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:21.701+08:00 DEBUG 3422 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:27.089+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [219]
+2025-02-21T10:41:27.090+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 84ffa970-c856-4e69-9072-adac105871f8
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 30
+
+{
+    "name" : "course1Max!"
+}]
+2025-02-21T10:41:27.118+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:41:27.118+08:00 DEBUG 3422 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:28.092+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:41:28.093+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: 14d5313c-f2ee-47f5-9843-9c1e3977dfd2
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 30
+
+{
+    "name" : "course1Max!"
+}]
+2025-02-21T10:41:28.126+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:41:28.126+08:00 DEBUG 3422 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T10:41:28.987+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:41:28.988+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: d7f3ed0b-f95d-4c17-80eb-d753a4c23336
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 30
+
+{
+    "name" : "course1Max!"
+}]
+2025-02-21T10:41:29.034+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [271]
+2025-02-21T10:41:29.035+08:00 DEBUG 3422 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T13:56:01.713+08:00  INFO 5979 --- [main] com.laioffer.twitch.TwitchApplication    : Starting TwitchApplication using Java 17.0.14 with PID 5979 (/Users/ziyuelong/Desktop/Project/Java/twitch/build/classes/java/main started by ziyuelong in /Users/ziyuelong/Desktop/Project/Java/twitch)
+2025-02-21T13:56:01.720+08:00  INFO 5979 --- [main] com.laioffer.twitch.TwitchApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T13:56:02.879+08:00  INFO 5979 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-02-21T13:56:02.889+08:00  INFO 5979 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-21T13:56:02.890+08:00  INFO 5979 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2025-02-21T13:56:03.002+08:00  INFO 5979 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-21T13:56:03.003+08:00  INFO 5979 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1176 ms
+2025-02-21T13:56:03.549+08:00  INFO 5979 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-21T13:56:03.563+08:00  INFO 5979 --- [main] com.laioffer.twitch.TwitchApplication    : Started TwitchApplication in 2.603 seconds (process running for 8.606)
+2025-02-21T13:56:16.326+08:00 DEBUG 5979 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T13:56:16.330+08:00 DEBUG 5979 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T13:56:16.355+08:00  INFO 5979 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-21T13:56:16.355+08:00  INFO 5979 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-21T13:56:16.357+08:00  INFO 5979 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-21T13:56:17.335+08:00 DEBUG 5979 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T13:56:17.336+08:00 DEBUG 5979 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T13:56:51.664+08:00 DEBUG 5979 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T13:56:51.665+08:00 DEBUG 5979 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T13:57:01.673+08:00 DEBUG 5979 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [737]
+2025-02-21T13:57:01.674+08:00 DEBUG 5979 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=zh-CN HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T13:57:01.748+08:00 DEBUG 5979 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T13:57:01.751+08:00 DEBUG 5979 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T13:57:06.674+08:00 DEBUG 5979 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T13:57:06.674+08:00 DEBUG 5979 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T13:57:19.281+08:00 DEBUG 5979 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [750]
+2025-02-21T13:57:19.283+08:00 DEBUG 5979 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello?locale=it HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: Webstorm-501c71e6=d2210ea6-c688-4efb-9b15-07d74b08d0ad
+
+]
+2025-02-21T13:57:19.314+08:00 DEBUG 5979 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T13:57:19.315+08:00 DEBUG 5979 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T13:57:21.675+08:00 DEBUG 5979 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2025-02-21T13:57:21.675+08:00 DEBUG 5979 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T13:57:33.759+08:00 DEBUG 5979 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [747]
+2025-02-21T13:57:33.760+08:00 DEBUG 5979 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+]
+2025-02-21T13:57:34.424+08:00 DEBUG 5979 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [679]
+2025-02-21T13:57:34.426+08:00 DEBUG 5979 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received []
+2025-02-21T13:57:36.678+08:00 DEBUG 5979 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [679]
+2025-02-21T13:57:36.678+08:00 DEBUG 5979 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
