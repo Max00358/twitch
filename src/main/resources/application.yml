@@ -38,6 +38,8 @@ spring:
           twitch:
             token-uri: https://id.twitch.tv/oauth2/token
   datasource:
+    # in docker-compose.yml we have 3307:3306 (local port : internal docker port)
+    # we listen to sql hosted on docker, hence we use docker port 3306
     url: jdbc:mysql://${DATABASE_URL:localhost}:3306/twitch?createDatabaseIfNotExist=true
     username: ${DATABASE_USERNAME:root}
     password: ${DATABASE_PASSWORD}
