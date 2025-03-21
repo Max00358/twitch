@@ -3,6 +3,7 @@ package com.laioffer.twitch;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.PropertySource;
 
@@ -23,6 +24,7 @@ import java.nio.file.Paths;
 
 @SpringBootApplication
 @EnableFeignClients
+@EnableCaching
 public class TwitchApplication {
     public static void main(String[] args) {
         // this allows us to reference .env variable in .yml file as such:

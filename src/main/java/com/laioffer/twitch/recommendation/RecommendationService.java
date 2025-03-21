@@ -7,6 +7,7 @@ import com.laioffer.twitch.external.model.Clip;
 import com.laioffer.twitch.external.model.Stream;
 import com.laioffer.twitch.external.model.Video;
 import com.laioffer.twitch.favorite.FavoriteService;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import com.laioffer.twitch.model.TypeGroupedItemList;
 
@@ -29,6 +30,7 @@ public class RecommendationService {
         this.favoriteService = favoriteService;
     }
 
+    @Cacheable("recommend_items")
     public TypeGroupedItemList recommendItems(UserEntity userEntity){
         List<String> gameIds;
         Set<String> exclusions = new HashSet<>();

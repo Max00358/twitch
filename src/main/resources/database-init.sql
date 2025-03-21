@@ -50,6 +50,9 @@ CREATE TABLE favorite_records(
     FOREIGN KEY (item_id) REFERENCES items(id) ON DELETE CASCADE,
     -- unlike PRIMARY KEY, a table can have multiple UNIQUE KEY constraint
     -- no 2 rows have the same item_id && user_id
-        -- meaning no user can like the same item twice
+        -- meaning no user can like the same item more than once
+        -- user 1 add item 101 (valid)
+        -- user 1 add item 102 (valid)
+        -- user 1 add item 101 (invalid)
     UNIQUE KEY unique_item_and_user_combo(item_id, user_id)
 );

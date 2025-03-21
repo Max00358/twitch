@@ -6,6 +6,7 @@ import com.laioffer.twitch.db.entity.FavoriteRecordEntity;
 import com.laioffer.twitch.db.entity.ItemEntity;
 import com.laioffer.twitch.db.entity.UserEntity;
 import com.laioffer.twitch.model.TypeGroupedItemList;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +25,7 @@ public class FavoriteService {
 
     // Transaction ensures that a series of database operations (e.g., reads, writes, updates, deletes) are executed as a single unit of work.
     // If any operation within the transaction fails, the entire transaction is rolled back, ensuring data consistency.
+    @CacheEvict(cacheNames = "recommend_items", key = "#user")
     @Transactional
     public void setFavoriteItem(UserEntity user, ItemEntity item) {
         ItemEntity persistedItem = itemRepository.findByTwitchId(item.twitchId());
@@ -37,6 +39,11 @@ public class FavoriteService {
         favoriteRecordRepository.save(favoriteRecord);
     }
 
+    // This is to solve the following problem
+        // when you add favor item and do recommendation, results will be cached
+        // and when you unset favorite item and do recommendation again,
+        // the cached result won't be updated, cacheEvict forces an update
+    @CacheEvict(cacheNames = "recommend_items", key = "#user")
     public void unsetFavoriteItem(UserEntity user, String twitchId){
         ItemEntity item = itemRepository.findByTwitchId(twitchId);
         if(item != null){
