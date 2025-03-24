@@ -29,13 +29,16 @@ public class TwitchApplication {
     public static void main(String[] args) {
         // this allows us to reference .env variable in .yml file as such:
             // client-id: ${TWITCH_CLIENT_ID}
+
+        /*
+        // only use these when running locally, not on AWS
         String envPath = Paths.get("src", "main", "resources", ".env").toAbsolutePath().toString();
         Dotenv dotenv = Dotenv.configure().directory(envPath).load();
 
         System.setProperty("TWITCH_CLIENT_ID", dotenv.get("TWITCH_CLIENT_ID"));
         System.setProperty("TWITCH_CLIENT_SECRET", dotenv.get("TWITCH_CLIENT_SECRET"));
         System.setProperty("DATABASE_PASSWORD", dotenv.get("DATABASE_PASSWORD"));
-
+         */
         SpringApplication.run(TwitchApplication.class, args);
     }
 }
