@@ -39,6 +39,7 @@ public class TwitchApplication {
         System.setProperty("TWITCH_CLIENT_SECRET", dotenv.get("TWITCH_CLIENT_SECRET"));
         System.setProperty("DATABASE_PASSWORD", dotenv.get("DATABASE_PASSWORD"));
          */
+
         SpringApplication.run(TwitchApplication.class, args);
     }
 }
