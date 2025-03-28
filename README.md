@@ -1,4 +1,4 @@
-![Image](https://github.com/user-attachments/assets/796c83d4-17a0-47b4-a229-907892ed3722)
+![Image](https://github.com/user-attachments/assets/48563836-1c78-4edc-9c15-fb28dcf902a4)
 ## **Twitch++: Personalized Twitch Resources Recommendation Engine**  
 ### **Live Demo**
  **Check out the project live ✨[HERE](https://ipp8hdhxi4.us-east-2.awsapprunner.com/)✨** 
