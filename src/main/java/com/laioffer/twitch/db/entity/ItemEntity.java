@@ -1,12 +1,13 @@
 package com.laioffer.twitch.db.entity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.laioffer.twitch.external.model.Clip;
-import com.laioffer.twitch.external.model.Stream;
-import com.laioffer.twitch.external.model.Video;
-import com.laioffer.twitch.external.model.ItemType;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.laioffer.twitch.external.model.Clip;
+import com.laioffer.twitch.external.model.ItemType;
+import com.laioffer.twitch.external.model.Stream;
+import com.laioffer.twitch.external.model.Video;
 
 // stream, video & clip are all ItemEntity obj with the below attributes
 @Table("items")
@@ -53,7 +54,7 @@ public record ItemEntity(
             null,
             stream.id(),
             stream.title(),
-            null,
+            "https://www.twitch.tv/" + stream.userLogin(),
             stream.thumbnail_url(),
             stream.userName(),
             stream.gameId(),
